@@ -48,7 +48,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "767 Fifth Avenue, New York, NY 10153 ",
+  address: " Hyderabad, Telangana ",
   phoneNo: "+91 9441308219 ",
   email: "saipranithelaprolu@gmail.com",
 };
