@@ -51,4 +51,4 @@ export const CONTACT = {
   address: " Hyderabad, Telangana ",
   phoneNo: "+91 9441308219 ",
   email: "saipranithelaprolu@gmail.com",
-};
+}
