@@ -15,7 +15,7 @@ const NavBar = () => {
     <nav className='mb-20 flex justify-between items-center py-6'>
       {/* Logo Section */}
       <div className='flex flex-shrink-0 items-center justify-center'>
-        <img src={logo} alt="Logo" className='w-12' />
+        <img src={logo} alt="Logo" className='w-12 lg:w-16' />
       </div>
 
       {/* Social Icons with Individual Colors */}
