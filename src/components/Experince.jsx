@@ -32,7 +32,12 @@ const Experience = () => {
           {/* Role & Details */}
           <div className="w-full">
             <h6 className="mb-1 font-semibold">{exp.role}</h6>
-            <p className="text-sm text-neutral-400">{exp.company}</p>
+           <div className="flex justify-between">
+           <p className="text-sm text-neutral-400">{exp.company}</p>
+           <p className="text-sm text-neutral-400">
+            <a href="https://drive.google.com/file/d/1dpdme9RubsAhLQPHIzCgP3h_mqaaveLX/view?usp=drive_link">certificate</a>
+           </p>
+           </div>
             <p className="mt-2 text-sm">{exp.description}</p>
 
             {/* Technologies - Animated on Hover */}
