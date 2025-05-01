@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CONTACT } from "../constants/index.js";
-import Resume from "../assets/Resume.pdf";
+import Resume from "../assets/SaiPranith Elaprolu Mern Stack Resume";
 
 const ContactUs = () => {
   return (
