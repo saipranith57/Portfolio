@@ -5,10 +5,30 @@ import logo from '../assets/Logo.png';  // Replace with your logo path
 
 const NavBar = () => {
   const socialIcons = [
-    { icon: <FaTwitter />, key: "twitter", color: "#1DA1F2" }, // Twitter Blue
-    { icon: <FaLinkedin />, key: "linkedin", color: "#0077B5" }, // LinkedIn Blue
-    { icon: <FaInstagram />, key: "instagram", color: "#E1306C" }, // Instagram Pink
-    { icon: <FaGithub />, key: "github", color: "#333" } // GitHub Dark
+    {
+      icon: <FaTwitter />,
+      key: 'twitter',
+      color: '#1DA1F2',
+      link: 'https://x.com/Tonysta87583698' // Replace with your Twitter URL
+    },
+    {
+      icon: <FaLinkedin />,
+      key: 'linkedin',
+      color: '#0077B5',
+      link: 'https://www.linkedin.com/in/saipranith-elaprolu-2407142a5/' // Replace with your LinkedIn URL
+    },
+    {
+      icon: <FaInstagram />,
+      key: 'instagram',
+      color: '#E1306C',
+      link: 'https://www.instagram.com/saipranith_chowdary/' // Replace with your Instagram URL
+    },
+    {
+      icon: <FaGithub />,
+      key: 'github',
+      color: '#333',
+      link: 'https://github.com/saipranith57' // Replace with your GitHub URL
+    }
   ];
 
   return (
@@ -18,24 +38,30 @@ const NavBar = () => {
         <img src={logo} alt="Logo" className='w-12 lg:w-16' />
       </div>
 
-      {/* Social Icons with Individual Colors */}
-      <div className='flex items-center gap-4 text-2xl hover:cursor-pointer'>
-        {socialIcons.map(({ icon, key, color }, index) => (
-          <motion.div
+      {/* Social Icons with Individual Colors and Links */}
+      <div className='flex items-center gap-4 text-2xl'>
+        {socialIcons.map(({ icon, key, color, link }, index) => (
+          <a
+            href={link}
             key={key}
-            initial={{ opacity: 0, y: -20, scale: 0.8 }} // Appear from top
-            animate={{ opacity: 1, y: 0, scale: 1 }} // Fully visible
-            transition={{ duration: 0.3, delay: index * 0.2 }} // Staggered effect
-            whileHover={{ scale: 1.2, color: color }} // Scale up & color change
-            whileTap={{ scale: 0.9 }} // Slight shrink on click
+            target="_blank"
+            rel="noopener noreferrer"
             className='cursor-pointer'
           >
-            {icon}
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -20, scale: 0.8 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.3, delay: index * 0.2 }}
+              whileHover={{ scale: 1.2, color: color }}
+              whileTap={{ scale: 0.9 }}
+            >
+              {icon}
+            </motion.div>
+          </a>
         ))}
       </div>
     </nav>
   );
-}
+};
 
 export default NavBar;
