@@ -16,7 +16,7 @@ const Hero = () => {
               transition={{ duration: 0.5 }}
               className='pb-16 text-3xl font-thin tracking-tight lg:text-6xl'
             >
-              Sai Pranith Elaprolu
+              Gudipati Sai Ganesh
             </motion.h1>
             
             {/* Text Reveal Animation for "Full Stack Developer" */}
@@ -26,7 +26,7 @@ const Hero = () => {
               transition={{ duration: 1.5, delay: 0.5 }}
               className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 tracking-tight bg-clip-text text-transparent text-2xl lg:text-4xl'
             >
-              Full Stack Developer
+              FP&A Analyst
             </motion.span>
 
             <motion.p

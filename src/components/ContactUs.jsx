@@ -39,7 +39,7 @@ const ContactUs = () => {
 
       {/* Animated Button for Resume Download */}
       <div className='my-4 flex justify-center'>
-        <a href={Resume} download="saipranith_resume.pdf">
+        <a href={Resume} download="SaiGanesh.G_resume.pdf">
           <motion.button 
             whileInView={{opacity:1}}
             viewport={{once:false,amount:0.2}}

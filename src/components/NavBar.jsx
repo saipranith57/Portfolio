@@ -6,22 +6,10 @@ import logo from '../assets/Logo.png';  // Replace with your logo path
 const NavBar = () => {
   const socialIcons = [
     {
-      icon: <FaTwitter />,
-      key: 'twitter',
-      color: '#1DA1F2',
-      link: 'https://x.com/Tonysta87583698' // Replace with your Twitter URL
-    },
-    {
       icon: <FaLinkedin />,
       key: 'linkedin',
       color: '#0077B5',
       link: 'https://www.linkedin.com/in/saipranith-elaprolu-2407142a5/' // Replace with your LinkedIn URL
-    },
-    {
-      icon: <FaInstagram />,
-      key: 'instagram',
-      color: '#E1306C',
-      link: 'https://www.instagram.com/saipranith_chowdary/' // Replace with your Instagram URL
     },
     {
       icon: <FaGithub />,
@@ -32,11 +20,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className='mb-20 flex justify-between items-center py-6'>
-      {/* Logo Section */}
-      <div className='flex flex-shrink-0 items-center justify-center'>
-        <img src={logo} alt="Logo" className='w-12 lg:w-16' />
-      </div>
+    <nav className='mb-20 flex justify-end items-center py-6'>
 
       {/* Social Icons with Individual Colors and Links */}
       <div className='flex items-center gap-4 text-2xl'>

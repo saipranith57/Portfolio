@@ -1,17 +1,19 @@
 import React from 'react';
-import { RiReactjsLine, RiNodejsLine, RiJavascriptLine } from "react-icons/ri";
-import { SiMongodb, SiExpress, SiNextdotjs, SiMysql } from "react-icons/si";
+import { SiMysql,SiZoho,SiAdp,SiSap   } from 'react-icons/si';
 import { motion } from 'framer-motion';
+import { PiMicrosoftExcelLogo } from "react-icons/pi";
+import { IoLogoTableau } from "react-icons/io5";
+import PowerbiIcon from './PowerbiIcon';
 
 // Icon list with staggered delays for wave motion
 const icons = [
-  { icon: <RiReactjsLine className="text-7xl p-4 text-cyan-400" />, delay: 0 },
-  { icon: <RiNodejsLine className="text-7xl p-4 text-[#509E44]" />, delay: 0.2 },
-  { icon: <RiJavascriptLine className="text-7xl p-4 text-[#E8D44D]" />, delay: 0.4 },
-  { icon: <SiMongodb className="text-7xl p-4 text-green-600" />, delay: 0.6 },
-  { icon: <SiExpress className="text-7xl p-4 text-gray-600" />, delay: 0.8 },
-  { icon: <SiNextdotjs className="text-7xl p-4 text-black-100" />, delay: 1 },
-  { icon: <SiMysql className="text-7xl p-4 text-[#4479A1]" />, delay: 1.2 }
+  { icon: <SiMysql className="text-7xl p-4 text-[#4479A1]" />, delay: 1.2 },
+  { icon: <SiZoho className="text-7xl p-4 text-[#E42527]" />, delay: 1.4 },
+  { icon: <SiAdp className="text-7xl p-4 text-[#d0271d]" />, delay: 1.4 },
+  { icon: <PiMicrosoftExcelLogo className="text-7xl p-4 text-[#217346]" />, delay: 1.6 },
+  { icon: <IoLogoTableau className="text-7xl p-4 text-[#530909]" />, delay: 1.8 },
+  { icon: <SiSap className="text-7xl p-4 text-[#0FAAFF]" />, delay: 1.8 },
+  { icon: <PowerbiIcon size={70} color="##F2C811" />, delay: 2.0 }
 ];
 
 const Tech = () => {
